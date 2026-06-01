@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSD — Order Status Display</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="topbar__pill"></div>
+        </header>
+
+        <main class="columns">
+            <section class="column" data-column="DINE_IN">
+                <header class="column__header">Dine In</header>
+                <div class="column__body">
+                    <div class="bucket bucket--preparing">
+                        <div class="bucket__label">Preparing</div>
+                        <div class="bucket__list" id="dineInPreparing"></div>
+                    </div>
+                    <div class="bucket bucket--collect">
+                        <div class="bucket__label">Collect</div>
+                        <div class="bucket__list" id="dineInCollect"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column" data-column="TAKE_AWAY">
+                <header class="column__header">Take Away</header>
+                <div class="column__body">
+                    <div class="bucket bucket--preparing">
+                        <div class="bucket__label">Preparing</div>
+                        <div class="bucket__list" id="takeAwayPreparing"></div>
+                    </div>
+                    <div class="bucket bucket--collect">
+                        <div class="bucket__label">Collect</div>
+                        <div class="bucket__list" id="takeAwayCollect"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="column" data-column="DELIVERY">
+                <header class="column__header">Delivery</header>
+                <div class="column__body">
+                    <div class="bucket bucket--preparing">
+                        <div class="bucket__label">Preparing</div>
+                        <div class="bucket__list" id="deliveryPreparing"></div>
+                    </div>
+                    <div class="bucket bucket--collect">
+                        <div class="bucket__label">Collect</div>
+                        <div class="bucket__list" id="deliveryCollect"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="marquee">
+            <div class="marquee__track">
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                <span>Welcome to TacitPos&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
